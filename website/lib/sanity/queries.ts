@@ -48,16 +48,21 @@ export const QUERY_ALL_APARTMENTS = `*[_type == "apartment" && active == true]{
 // Filtered by optional city (string match) OR experience category (string match), capacity (min guests needed), amenities (string[] names)
 export const QUERY_ALL_APARTMENTS_FILTERED = `*[_type == "apartment" && active == true
   && (
-    // No filters specified - return all apartments
     ((!defined($city) || $city == "") && (!defined($experienceCategory) || $experienceCategory == "")) ||
-    // City filter only
     ((defined($city) && $city != "") && (!defined($experienceCategory) || $experienceCategory == "") && location.city match $city) ||
-    // Experience category filter only
     ((!defined($city) || $city == "") && (defined($experienceCategory) && $experienceCategory != "") && experienceCategory->name match $experienceCategory) ||
-    // Both filters - match either city OR experience category
     ((defined($city) && $city != "") && (defined($experienceCategory) && $experienceCategory != "") && (location.city match $city || experienceCategory->name match $experienceCategory))
   )
   && (!defined($capacity) || ($capacity >= coalesce(capacity.minGuests, 0) && $capacity <= coalesce(capacity.maxGuests, 999)))
+  && (
+    (!defined($checkin) || !defined($checkout)) ||
+    count(pricePeriods[
+      @.startDate <= $checkout && (
+        (defined(@.endDate) && @.endDate >= $checkin) ||
+        (!defined(@.endDate) && @.startDate >= $checkin)
+      )
+    ]) > 0
+  )
 ]{
   _id,
   name,
