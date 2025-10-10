@@ -1,15 +1,17 @@
 import { Agent } from '@mastra/core/agent';
-import { openai } from '@ai-sdk/openai';
+// import { openai } from '@ai-sdk/openai';
+import { google } from '@ai-sdk/google';
 import { memory } from '@/lib/mastra/memory';
 import { RuntimeContext } from '@mastra/core/runtime-context';
 import type { ApartmentSearchRuntimeContext } from '@/lib/mastra/runtime-context';
 
-const DEFAULT_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
+// const DEFAULT_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
+const modelGemini = google('gemini-2.5-flash-lite');
 
 export const searchAgent = new Agent({
   name: 'apartment-search-agent',
   description: 'Interacts with users to collect apartment search filters.',
-  instructions: async ({ runtimeContext }: { runtimeContext: RuntimeContext<ApartmentSearchRuntimeContext> }) => {
+  instructions: async ({ runtimeContext }: { runtimeContext: RuntimeContext<ApartmentSearchRuntimeContext>; }) => {
     const availableCities = runtimeContext.get('available-cities') || [];
     const availableExperienceCategories = runtimeContext.get('available-experience-categories') || [];
 
@@ -55,6 +57,6 @@ export const searchAgent = new Agent({
     IMPORTANT: Never include images, image URLs, or markdown image syntax in your responses. Only provide text descriptions.
     Be aware today is ${new Date().toISOString()}`;
   },
-  model: openai(DEFAULT_MODEL),
+  model: modelGemini, //openai(DEFAULT_MODEL),
   memory,
 });
