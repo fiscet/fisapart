@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { ApartmentCard } from './ApartmentCard';
 import { useApartmentFilters } from '@/providers/ApartmentFiltersProvider';
-import { fetchApartments } from '@/lib/sanity/actions';
+import { fetchApartments } from '@/lib/data/actions';
 
 type Currency = 'EUR' | 'USD' | 'GBP';
 

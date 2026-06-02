@@ -1,0 +1,439 @@
+{
+  "cities": [
+    {
+      "_id": "city-roma",
+      "name": "Roma",
+      "slug": "roma",
+      "region": "Lazio",
+      "country": "Italy",
+      "description": "The Eternal City: history, art and unforgettable food.",
+      "image": "/images/cities/roma.jpeg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-firenze",
+      "name": "Firenze",
+      "slug": "firenze",
+      "region": "Toscana",
+      "country": "Italy",
+      "description": "The cradle of the Renaissance, in the heart of Tuscany.",
+      "image": "/images/cities/Firenze.jpg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-venezia",
+      "name": "Venezia",
+      "slug": "venezia",
+      "region": "Veneto",
+      "country": "Italy",
+      "description": "Canals, palaces and timeless romance on the lagoon.",
+      "image": "/images/cities/venice.jpeg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-milano",
+      "name": "Milano",
+      "slug": "milano",
+      "region": "Lombardia",
+      "country": "Italy",
+      "description": "Italy's capital of fashion, design and nightlife.",
+      "image": "/images/cities/milan.jpg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-positano",
+      "name": "Positano",
+      "slug": "positano",
+      "region": "Campania",
+      "country": "Italy",
+      "description": "The jewel of the Amalfi Coast, cascading down to the sea.",
+      "image": "/images/cities/positano-salerno-campania.jpg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-ogliastra",
+      "name": "Ogliastra",
+      "slug": "ogliastra",
+      "region": "Sardegna",
+      "country": "Italy",
+      "description": "Wild Sardinian coastline with turquoise water and quiet coves.",
+      "image": "/images/cities/cea-ogliastra-sardegna.jpeg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-jesolo",
+      "name": "Jesolo",
+      "slug": "jesolo",
+      "region": "Veneto",
+      "country": "Italy",
+      "description": "Long sandy beaches and a lively Adriatic seaside resort.",
+      "image": "/images/cities/jesolo.jpg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-levanzo",
+      "name": "Levanzo",
+      "slug": "levanzo",
+      "region": "Sicilia",
+      "country": "Italy",
+      "description": "The smallest of the Egadi Islands, crystal sea and silence.",
+      "image": "/images/cities/levanzo-trapani-sicilia.jpg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-rimini",
+      "name": "Rimini",
+      "slug": "rimini",
+      "region": "Emilia-Romagna",
+      "country": "Italy",
+      "description": "Adriatic beaches, nightlife and Felliniesque charm.",
+      "image": "/images/cities/rimini.jpg",
+      "active": true,
+      "featured": true
+    },
+    {
+      "_id": "city-alberobello",
+      "name": "Alberobello",
+      "slug": "alberobello",
+      "region": "Puglia",
+      "country": "Italy",
+      "description": "The fairytale town of trulli, in the heart of Puglia.",
+      "image": "/images/cities/alberobello-bari-puglia.jpg",
+      "active": true,
+      "featured": true
+    }
+  ],
+  "experienceCategories": [
+    {
+      "_id": "cat-sea",
+      "name": "Sea",
+      "slug": "sea",
+      "description": "Coastal stays with beaches and sea views.",
+      "image": "/images/cities/positano-salerno-campania.jpg"
+    },
+    {
+      "_id": "cat-city",
+      "name": "City",
+      "slug": "city",
+      "description": "Urban apartments steps away from art and nightlife.",
+      "image": "/images/cities/milan.jpg"
+    },
+    {
+      "_id": "cat-wellness",
+      "name": "Wellness",
+      "slug": "wellness",
+      "description": "Relax and recharge with spa and wellness retreats.",
+      "image": "/images/cities/cea-ogliastra-sardegna.jpeg"
+    },
+    {
+      "_id": "cat-food-wine",
+      "name": "Food & Wine",
+      "slug": "food-wine",
+      "description": "Culinary getaways in Italy's tastiest regions.",
+      "image": "/images/cities/Firenze.jpg"
+    }
+  ],
+  "amenities": [
+    { "_id": "am-wifi", "name": "Wi-Fi", "slug": "wifi", "icon": "wifi", "category": "basic" },
+    { "_id": "am-parking", "name": "Parking", "slug": "parking", "icon": "parking", "category": "basic" },
+    { "_id": "am-pool", "name": "Swimming Pool", "slug": "pool", "icon": "pool", "category": "outdoor" },
+    { "_id": "am-kitchen", "name": "Kitchen", "slug": "kitchen", "icon": "utensils", "category": "kitchen" },
+    { "_id": "am-ac", "name": "Air Conditioning", "slug": "air-conditioning", "icon": "snowflake", "category": "basic" },
+    { "_id": "am-heating", "name": "Heating", "slug": "heating", "icon": "flame", "category": "basic" },
+    { "_id": "am-washer", "name": "Washer", "slug": "washer", "icon": "washing-machine", "category": "basic" },
+    { "_id": "am-tv", "name": "TV", "slug": "tv", "icon": "tv", "category": "entertainment" },
+    { "_id": "am-balcony", "name": "Balcony", "slug": "balcony", "icon": "home", "category": "outdoor" },
+    { "_id": "am-pet", "name": "Pet Friendly", "slug": "pet-friendly", "icon": "paw-print", "category": "basic" },
+    { "_id": "am-spa", "name": "Spa", "slug": "spa", "icon": "sparkles", "category": "outdoor" },
+    { "_id": "am-fireplace", "name": "Fireplace", "slug": "fireplace", "icon": "flame", "category": "entertainment" }
+  ],
+  "apartments": [
+    {
+      "_id": "apt-trastevere-loft",
+      "name": "Trastevere Sunlit Loft",
+      "slug": "trastevere-sunlit-loft",
+      "description": "A bright loft in the heart of Trastevere, steps from Rome's best trattorias and cobblestone alleys. Perfect for couples exploring the city on foot.",
+      "citySlug": "roma",
+      "location": { "city": "Roma", "country": "Italy", "address": "Via della Lungaretta 12, Trastevere", "lat": 41.8893, "lng": 12.4699 },
+      "experienceCategorySlug": "city",
+      "amenitySlugs": ["wifi", "kitchen", "air-conditioning", "heating", "tv", "washer"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bef4dce4cb8fadca14abaf.png", "alt": "Loft living room", "caption": "Bright living area", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bef4dce4cb8fadca14abb0.png", "alt": "Bedroom", "caption": "Cozy bedroom", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-05-31", "price": 120, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-06-01", "endDate": "2026-09-30", "price": 180, "currency": "EUR", "notes": "High season" },
+        { "_type": "priceRange", "startDate": "2026-10-01", "endDate": "2026-12-31", "price": 130, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 1, "maxGuests": 4, "bedrooms": 1, "bathrooms": 1 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-colosseo-suite",
+      "name": "Colosseo View Suite",
+      "slug": "colosseo-view-suite",
+      "description": "Wake up to views of the Colosseum from this elegant suite. Spacious, modern and ideal for families wanting to be at the center of ancient Rome.",
+      "citySlug": "roma",
+      "location": { "city": "Roma", "country": "Italy", "address": "Via Labicana 88", "lat": 41.8902, "lng": 12.4977 },
+      "experienceCategorySlug": "city",
+      "amenitySlugs": ["wifi", "kitchen", "air-conditioning", "heating", "tv", "balcony", "washer"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bef4dce4cb8fadca14abb1.png", "alt": "Suite with Colosseum view", "caption": "Colosseum view", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bef4dce4cb8fadca14abb2.png", "alt": "Dining area", "caption": "Dining area", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-05-31", "price": 160, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-06-01", "endDate": "2026-09-30", "price": 240, "currency": "EUR", "notes": "High season" },
+        { "_type": "priceRange", "startDate": "2026-10-01", "endDate": "2026-12-31", "price": 175, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 2, "maxGuests": 6, "bedrooms": 2, "bathrooms": 2 },
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-duomo-firenze",
+      "name": "Duomo Renaissance Apartment",
+      "slug": "duomo-renaissance-apartment",
+      "description": "A refined apartment a stone's throw from the Duomo, with frescoed ceilings and modern comforts. Immerse yourself in Florentine art and culture.",
+      "citySlug": "firenze",
+      "location": { "city": "Firenze", "country": "Italy", "address": "Via dei Calzaiuoli 5", "lat": 43.7716, "lng": 11.2558 },
+      "experienceCategorySlug": "city",
+      "amenitySlugs": ["wifi", "kitchen", "air-conditioning", "heating", "tv", "washer"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd4586a.png", "alt": "Apartment near Duomo", "caption": "Elegant interior", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd4586b.png", "alt": "Living room", "caption": "Frescoed living room", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-05-31", "price": 140, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-06-01", "endDate": "2026-09-30", "price": 210, "currency": "EUR", "notes": "High season" },
+        { "_type": "priceRange", "startDate": "2026-10-01", "endDate": "2026-12-31", "price": 150, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 1, "maxGuests": 4, "bedrooms": 1, "bathrooms": 1 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-01-15T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-chianti-villa",
+      "name": "Chianti Vineyard Retreat",
+      "slug": "chianti-vineyard-retreat",
+      "description": "Surrounded by rolling vineyards in the Tuscan hills near Florence, this farmhouse apartment is a paradise for wine and food lovers, complete with a private terrace.",
+      "citySlug": "firenze",
+      "location": { "city": "Firenze", "country": "Italy", "address": "Strada del Chianti 30, Greve", "lat": 43.5836, "lng": 11.3157 },
+      "experienceCategorySlug": "food-wine",
+      "amenitySlugs": ["wifi", "kitchen", "parking", "pool", "heating", "fireplace", "balcony", "pet-friendly"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd4586c.png", "alt": "Vineyard farmhouse", "caption": "Vineyard views", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd4586d.png", "alt": "Terrace", "caption": "Private terrace", "isMain": false },
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd4586e.png", "alt": "Kitchen", "caption": "Farmhouse kitchen", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-04-30", "price": 150, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-05-01", "endDate": "2026-10-15", "price": 260, "currency": "EUR", "notes": "Harvest season" },
+        { "_type": "priceRange", "startDate": "2026-10-16", "endDate": "2026-12-31", "price": 160, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 2, "maxGuests": 8, "bedrooms": 3, "bathrooms": 2 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-01-18T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-canal-grande",
+      "name": "Canal Grande Romantic Flat",
+      "slug": "canal-grande-romantic-flat",
+      "description": "Overlooking the Grand Canal, this romantic flat features a Juliet balcony and authentic Venetian decor. The perfect base for a city escape on the water.",
+      "citySlug": "venezia",
+      "location": { "city": "Venezia", "country": "Italy", "address": "Fondamenta San Simeon Piccolo 4", "lat": 45.4408, "lng": 12.3215 },
+      "experienceCategorySlug": "city",
+      "amenitySlugs": ["wifi", "kitchen", "heating", "air-conditioning", "tv", "balcony"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd4586f.png", "alt": "Grand Canal view flat", "caption": "Canal view", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd45870.png", "alt": "Bedroom", "caption": "Venetian bedroom", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-03-31", "price": 170, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-04-01", "endDate": "2026-10-31", "price": 280, "currency": "EUR", "notes": "High season" },
+        { "_type": "priceRange", "startDate": "2026-11-01", "endDate": "2026-12-31", "price": 190, "currency": "EUR", "notes": "Winter" }
+      ],
+      "capacity": { "minGuests": 1, "maxGuests": 3, "bedrooms": 1, "bathrooms": 1 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-01-20T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-navigli-loft",
+      "name": "Navigli Design Loft",
+      "slug": "navigli-design-loft",
+      "description": "A stylish design loft on Milan's lively Navigli canals, surrounded by aperitivo bars and boutiques. Ideal for design lovers and city explorers.",
+      "citySlug": "milano",
+      "location": { "city": "Milano", "country": "Italy", "address": "Ripa di Porta Ticinese 47", "lat": 45.4515, "lng": 9.1742 },
+      "experienceCategorySlug": "city",
+      "amenitySlugs": ["wifi", "kitchen", "air-conditioning", "heating", "tv", "washer"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bef4e809a28741dbd45871.png", "alt": "Design loft", "caption": "Design living space", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf1a2b9409f31d9943fe91.png", "alt": "Kitchen island", "caption": "Modern kitchen", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-06-30", "price": 150, "currency": "EUR", "notes": "Regular season" },
+        { "_type": "priceRange", "startDate": "2026-07-01", "endDate": "2026-08-31", "price": 120, "currency": "EUR", "notes": "Summer (quiet)" },
+        { "_type": "priceRange", "startDate": "2026-09-01", "endDate": "2026-12-31", "price": 200, "currency": "EUR", "notes": "Fashion/Design weeks" }
+      ],
+      "capacity": { "minGuests": 1, "maxGuests": 4, "bedrooms": 1, "bathrooms": 1 },
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-01-22T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-positano-cliffside",
+      "name": "Positano Cliffside Retreat",
+      "slug": "positano-cliffside-retreat",
+      "description": "A breathtaking retreat clinging to the cliffs of Positano, with a sun terrace overlooking the Tyrrhenian Sea. The ultimate Amalfi Coast escape.",
+      "citySlug": "positano",
+      "location": { "city": "Positano", "country": "Italy", "address": "Via Cristoforo Colombo 22", "lat": 40.6281, "lng": 14.4842 },
+      "experienceCategorySlug": "sea",
+      "amenitySlugs": ["wifi", "kitchen", "air-conditioning", "tv", "balcony", "pool"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bf1a54d448651d089f56f4.png", "alt": "Cliffside terrace", "caption": "Sea-view terrace", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf1abe36af56098d9011e9.png", "alt": "Bedroom with sea view", "caption": "Sea-view bedroom", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-04-30", "price": 180, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-05-01", "endDate": "2026-09-30", "price": 350, "currency": "EUR", "notes": "Summer" },
+        { "_type": "priceRange", "startDate": "2026-10-01", "endDate": "2026-12-31", "price": 200, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 2, "maxGuests": 5, "bedrooms": 2, "bathrooms": 2 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-01-25T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-jesolo-beachfront",
+      "name": "Jesolo Beachfront Apartment",
+      "slug": "jesolo-beachfront-apartment",
+      "description": "Steps from the golden sands of Jesolo, this airy apartment is made for beach holidays, with a furnished balcony and bikes included. Great for families.",
+      "citySlug": "jesolo",
+      "location": { "city": "Jesolo", "country": "Italy", "address": "Via Bafile 180", "lat": 45.5046, "lng": 12.6486 },
+      "experienceCategorySlug": "sea",
+      "amenitySlugs": ["wifi", "kitchen", "parking", "air-conditioning", "tv", "balcony", "pet-friendly"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bf1b45f6e89214514833e7.png", "alt": "Beachfront apartment", "caption": "Beachfront living", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf1c0cefbfab543b546c60.png", "alt": "Balcony", "caption": "Furnished balcony", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-05-31", "price": 90, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-06-01", "endDate": "2026-09-15", "price": 200, "currency": "EUR", "notes": "Beach season" },
+        { "_type": "priceRange", "startDate": "2026-09-16", "endDate": "2026-12-31", "price": 100, "currency": "EUR", "notes": "Off season" }
+      ],
+      "capacity": { "minGuests": 2, "maxGuests": 6, "bedrooms": 2, "bathrooms": 1 },
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-01-28T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-levanzo-hideaway",
+      "name": "Levanzo Island Hideaway",
+      "slug": "levanzo-island-hideaway",
+      "description": "A whitewashed hideaway on the tiny island of Levanzo, where car-free lanes lead to crystal-clear coves. Pure Mediterranean tranquility.",
+      "citySlug": "levanzo",
+      "location": { "city": "Levanzo", "country": "Italy", "address": "Via Calvario 3", "lat": 38.0006, "lng": 12.3389 },
+      "experienceCategorySlug": "sea",
+      "amenitySlugs": ["wifi", "kitchen", "air-conditioning", "balcony"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bf4d981d516fce3c791af2.png", "alt": "Island house", "caption": "Whitewashed hideaway", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf4d981d516fce3c791af3.png", "alt": "Sea cove", "caption": "Nearby cove", "isMain": false },
+        { "url": "/images/apartments/pixlr-image-generator-68bf4d981d516fce3c791af4.png", "alt": "Patio", "caption": "Sunny patio", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-05-31", "price": 80, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-06-01", "endDate": "2026-09-30", "price": 170, "currency": "EUR", "notes": "Summer" },
+        { "_type": "priceRange", "startDate": "2026-10-01", "endDate": "2026-12-31", "price": 90, "currency": "EUR", "notes": "Off season" }
+      ],
+      "capacity": { "minGuests": 1, "maxGuests": 4, "bedrooms": 2, "bathrooms": 1 },
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-ogliastra-lodge",
+      "name": "Ogliastra Sea & Wellness Lodge",
+      "slug": "ogliastra-sea-wellness-lodge",
+      "description": "A serene Sardinian lodge near the coves of Ogliastra, with a private spa corner and a garden scented by Mediterranean herbs. Designed for total relaxation.",
+      "citySlug": "ogliastra",
+      "location": { "city": "Ogliastra", "country": "Italy", "address": "Località Cea, Tortolì", "lat": 39.9242, "lng": 9.6985 },
+      "experienceCategorySlug": "wellness",
+      "amenitySlugs": ["wifi", "kitchen", "parking", "air-conditioning", "spa", "pool", "tv", "balcony"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bf4d981d516fce3c791af5.png", "alt": "Wellness lodge", "caption": "Wellness lodge", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf4dba0fb9f4f387bb794a.png", "alt": "Spa corner", "caption": "Private spa", "isMain": false },
+        { "url": "/images/apartments/pixlr-image-generator-68bf4dba0fb9f4f387bb794c.png", "alt": "Garden", "caption": "Mediterranean garden", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-04-30", "price": 160, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-05-01", "endDate": "2026-09-30", "price": 280, "currency": "EUR", "notes": "Summer" },
+        { "_type": "priceRange", "startDate": "2026-10-01", "endDate": "2026-12-31", "price": 180, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 2, "maxGuests": 4, "bedrooms": 2, "bathrooms": 2 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-02-05T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-rimini-adriatic-suite",
+      "name": "Rimini Adriatic Beach Suite",
+      "slug": "rimini-adriatic-beach-suite",
+      "description": "A cheerful suite a short walk from Rimini's famous beach and promenade. Perfect for a sun-and-sea holiday with a lively Adriatic vibe.",
+      "citySlug": "rimini",
+      "location": { "city": "Rimini", "country": "Italy", "address": "Lungomare Augusto Murri 40", "lat": 44.0573, "lng": 12.5760 },
+      "experienceCategorySlug": "sea",
+      "amenitySlugs": ["wifi", "kitchen", "parking", "air-conditioning", "tv", "balcony"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bf4dba0fb9f4f387bb794d.png", "alt": "Beach suite", "caption": "Bright beach suite", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf4dba0fb9f4f387bb794f.png", "alt": "Balcony", "caption": "Sea-facing balcony", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-05-31", "price": 85, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-06-01", "endDate": "2026-09-15", "price": 190, "currency": "EUR", "notes": "Beach season" },
+        { "_type": "priceRange", "startDate": "2026-09-16", "endDate": "2026-12-31", "price": 95, "currency": "EUR", "notes": "Off season" }
+      ],
+      "capacity": { "minGuests": 2, "maxGuests": 5, "bedrooms": 2, "bathrooms": 1 },
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-02-08T10:00:00.000Z"
+    },
+    {
+      "_id": "apt-alberobello-trullo",
+      "name": "Alberobello Trullo Charme",
+      "slug": "alberobello-trullo-charme",
+      "description": "Sleep in a restored trullo with its iconic conical roof, in the fairytale heart of Alberobello. A unique Puglian stay surrounded by olive groves and great food.",
+      "citySlug": "alberobello",
+      "location": { "city": "Alberobello", "country": "Italy", "address": "Rione Monti 15", "lat": 40.7860, "lng": 17.2370 },
+      "experienceCategorySlug": "food-wine",
+      "amenitySlugs": ["wifi", "kitchen", "parking", "air-conditioning", "heating", "fireplace", "pet-friendly"],
+      "images": [
+        { "url": "/images/apartments/pixlr-image-generator-68bf1b45f6e89214514833e7.png", "alt": "Trullo interior", "caption": "Restored trullo", "isMain": true },
+        { "url": "/images/apartments/pixlr-image-generator-68bf1c0cefbfab543b546c60.png", "alt": "Stone bedroom", "caption": "Cozy stone bedroom", "isMain": false }
+      ],
+      "pricePeriods": [
+        { "_type": "priceRange", "startDate": "2026-01-01", "endDate": "2026-04-30", "price": 110, "currency": "EUR", "notes": "Low season" },
+        { "_type": "priceRange", "startDate": "2026-05-01", "endDate": "2026-10-15", "price": 200, "currency": "EUR", "notes": "High season" },
+        { "_type": "priceRange", "startDate": "2026-10-16", "endDate": "2026-12-31", "price": 120, "currency": "EUR", "notes": "Autumn/Winter" }
+      ],
+      "capacity": { "minGuests": 1, "maxGuests": 4, "bedrooms": 2, "bathrooms": 1 },
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-02-10T10:00:00.000Z"
+    }
+  ]
+}

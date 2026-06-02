@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { createApartmentSearchRuntimeContext, type SuggestionItem } from '@/lib/mastra/runtime-context';
+import type { SuggestionItem } from '@/types/suggestion';
 
 interface RuntimeContextProviderProps {
   children: React.ReactNode;
@@ -9,26 +9,25 @@ interface RuntimeContextProviderProps {
   experienceCategories: SuggestionItem[];
 }
 
-const RuntimeContextContext = React.createContext<{
-  runtimeContext: ReturnType<typeof createApartmentSearchRuntimeContext>;
-} | null>(null);
+type RuntimeContextValue = {
+  cities: SuggestionItem[];
+  experienceCategories: SuggestionItem[];
+};
+
+const RuntimeContextContext = React.createContext<RuntimeContextValue | null>(null);
 
 export function RuntimeContextProvider({
   children,
   cities,
-  experienceCategories
+  experienceCategories,
 }: RuntimeContextProviderProps) {
-  const runtimeContext = React.useMemo(() => {
-    const context = createApartmentSearchRuntimeContext();
-    context.set('available-cities', cities);
-    context.set('available-experience-categories', experienceCategories);
-    return context;
-  }, [cities, experienceCategories]);
+  const value = React.useMemo(
+    () => ({ cities, experienceCategories }),
+    [cities, experienceCategories]
+  );
 
   return (
-    <RuntimeContextContext.Provider value={{ runtimeContext }}>
-      {children}
-    </RuntimeContextContext.Provider>
+    <RuntimeContextContext.Provider value={value}>{children}</RuntimeContextContext.Provider>
   );
 }
 
