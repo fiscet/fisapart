@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'AI Demo app',
-  description: 'AI Demo website for holiday apartment rentals',
+  title: 'FisApart',
+  description: 'FisApart — AI demo for holiday apartment rentals',
 };
 
 import './globals.css';
