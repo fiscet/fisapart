@@ -45,3 +45,26 @@ a:hover {
   color: var(--link-hover, var(--link, inherit));
   text-decoration-color: var(--link-hover, var(--link, currentColor));
 }
+
+/* Attention-grabbing heartbeat pulse for the "How it works" button */
+@keyframes fisapart-heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.35);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 0 10px rgba(99, 102, 241, 0.12),
+      0 12px 28px -4px rgba(99, 102, 241, 0.6);
+  }
+}
+
+.animate-heartbeat {
+  animation: fisapart-heartbeat 1.3s ease-in-out infinite;
+}
+
+.animate-heartbeat:hover {
+  animation-play-state: paused;
+}

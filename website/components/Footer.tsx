@@ -6,7 +6,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="mb-4 flex items-center">
               <i className="fas fa-home text-primary mr-2 text-2xl"></i>
-              <h4 className="text-foreground text-xl font-bold">VacanzaItalia</h4>
+              <h4 className="text-foreground text-xl font-bold">FisApart</h4>
             </div>
             <p className="text-muted-foreground mb-4">
               The best vacation apartments in Italy. Discover Italian culture and enjoy authentic
@@ -54,7 +54,7 @@ export function Footer() {
             <ul className="text-muted-foreground space-y-2">
               <li className="flex items-center space-x-2">
                 <i className="fas fa-envelope text-sm"></i>
-                <span>info@vacanzaitalia.com</span>
+                <span>info@fisapart.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <i className="fas fa-phone text-sm"></i>
@@ -68,7 +68,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-border text-muted-foreground mt-8 border-t pt-8 text-center">
-          <p>&copy; 2024 VacanzaItalia. All rights reserved.</p>
+          <p>&copy; 2026 FisApart. All rights reserved.</p>
         </div>
       </div>
     </footer>
