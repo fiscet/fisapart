@@ -43,6 +43,7 @@ export default function SearchChat() {
   const [input, setInput] = React.useState('');
   const [isExpanded, setIsExpanded] = React.useState(true);
   const messagesContainerRef = React.useRef<HTMLDivElement>(null);
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
@@ -103,6 +104,16 @@ Just tell me your preferences and I'll find the perfect apartment for you! 🎯`
       messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
     }
   }, [messages, isExpanded]);
+
+  // Refocus the input once the agent finishes (loading goes from true -> false),
+  // so the user can keep typing without clicking back into the field.
+  const prevLoadingRef = React.useRef(false);
+  React.useEffect(() => {
+    if (prevLoadingRef.current && !loading) {
+      inputRef.current?.focus();
+    }
+    prevLoadingRef.current = loading;
+  }, [loading]);
 
   function handleSend() {
     const content = input.trim();
@@ -180,6 +191,7 @@ Just tell me your preferences and I'll find the perfect apartment for you! 🎯`
               causing a harmless hydration mismatch. */}
           <div className="flex gap-2 w-full" suppressHydrationWarning>
             <HeroInput
+              ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={loading ? 'Searching...' : 'Ask about apartments...'}
