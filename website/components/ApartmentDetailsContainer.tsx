@@ -1,9 +1,8 @@
-import { client } from '@/lib/sanity/client';
 import { ApartmentDetails } from './ApartmentDetails';
-import { QUERY_APARTMENT_DETAILS } from '@/lib/sanity/queries';
+import { getApartmentBySlug } from '@/lib/data';
 
 export async function ApartmentDetailsContainer({ slug }: { slug: string }) {
-  const data = await client.fetch(QUERY_APARTMENT_DETAILS, { slug });
+  const data = await getApartmentBySlug(slug);
   if (!data) {
     return <div className="text-muted-foreground p-6">Apartment not found.</div>;
   }

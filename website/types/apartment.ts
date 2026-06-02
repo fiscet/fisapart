@@ -1,5 +1,14 @@
 export type Currency = 'EUR' | 'USD' | 'GBP';
 
+export type PriceRange = {
+  _type: 'priceRange';
+  startDate?: string;
+  endDate?: string;
+  price?: number;
+  currency?: Currency;
+  notes?: string;
+};
+
 export interface ApartmentData {
   _id: string;
   name?: string;
