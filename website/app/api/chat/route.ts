@@ -15,9 +15,6 @@ import type { ApartmentData } from '@/types/apartment';
 
 export const maxDuration = 30;
 
-// gpt-oss-120b on Groq is significantly more reliable at tool calling than
-// llama-3.3-70b-versatile, which intermittently emits malformed function calls
-// that Groq rejects with `failed_generation`.
 const model = groq(process.env.GROQ_MODEL ?? 'openai/gpt-oss-120b');
 
 const tools = {
@@ -109,8 +106,6 @@ export async function POST(req: Request) {
     tools,
     stopWhen: stepCountIs(5),
     onError: ({ error }) => {
-      // Surface provider-side failures (e.g. Groq `failed_generation` on a
-      // malformed tool call) in the server logs instead of silently swallowing.
       console.error('[api/chat] streamText error:', error);
     },
   });
